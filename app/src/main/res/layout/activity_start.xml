@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to ChatRoom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_centerInParent="true"
+        android:textSize="28sp"
+        android:textColor="#ffffff"
+        android:id="@+id/textview"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview"
+        android:text="ALREADY HAVE ACCOUNT"
+        android:id="@+id/start_login_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEED A NEW ACCOUNT?"
+        android:layout_below="@id/start_login_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/Start_reg_btn"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:textSize="16sp"
+        android:backgroundTint="#ffffff"
+        android:textColor="@color/colorPrimary"
+        />
+
+</RelativeLayout>
